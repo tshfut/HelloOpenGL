@@ -55,3 +55,23 @@ add_executable(HelloCoordinateSystems
 target_link_libraries(HelloCoordinateSystems
     ${PROJECT_SOURCE_DIR}/libs/lib-mingw-w64/libglfw3.a
     )
+
+#=======================================================
+add_executable(HelloCoordinateSystemsDpeth
+    source/coordinate_systems/coordinate_systems_depth.cpp
+    source/glad.c
+    source/stb_image.cpp
+    )
+target_link_libraries(HelloCoordinateSystemsDpeth
+    ${PROJECT_SOURCE_DIR}/libs/lib-mingw-w64/libglfw3.a
+    )
+
+#=======================================================
+add_executable(HelloCamerCircle
+    source/camera_circle/camera_circle.cpp
+    source/glad.c
+    source/stb_image.cpp
+    )
+target_link_libraries(HelloCamerCircle
+    ${PROJECT_SOURCE_DIR}/libs/lib-mingw-w64/libglfw3.a
+    )
